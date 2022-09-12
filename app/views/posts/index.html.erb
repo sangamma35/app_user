@@ -23,7 +23,7 @@ favorite.post %>
         <td><%= post.description %></td>
         <td><%= link_to 'Show', post_path(post) %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Delete', post_path(post), data: { turbo_confirm: 'Are you sure?', turbo_method: :delete } %></td>
+        <td><%= link_to 'Delete', posts_path(post), data: { turbo_confirm: 'Are you sure?', turbo_method: :delete } %></td>
       </tr>
     <% end %>
   </tbody>
